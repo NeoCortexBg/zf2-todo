@@ -1,0 +1,8 @@
+<?php
+
+$todoFilterForm->setAttribute('action', $_SERVER['REQUEST_URI']);
+$todoFilterForm->prepare();
+
+echo $this->form()->openTag($todoFilterForm);
+echo $this->formCollection($todoFilterForm);
+echo $this->form()->closeTag();

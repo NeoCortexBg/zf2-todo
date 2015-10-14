@@ -1,0 +1,24 @@
+<?php
+
+$title = 'Delete todo';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+
+<p>Are you sure that you want to delete todo
+	'<?php echo $this->escapeHtml($todo->todo_sid); ?>' created
+	'<?php echo $this->escapeHtml($todo->date_created); ?>'?
+</p>
+<?php
+$url = $this->url('todo', array(
+	'action' => 'delete',
+	'id'     => $this->id,
+));
+?>
+<form action="<?php echo $url; ?>" method="post">
+<div>
+	<input type="hidden" name="id" value="<?php echo (int) $todo->todo_sid; ?>" />
+	<input type="submit" name="del" value="Yes" />
+	<input type="submit" name="del" value="No" />
+</div>
+</form>

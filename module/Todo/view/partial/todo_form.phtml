@@ -1,0 +1,65 @@
+<?php
+use Todo\Model\DateHelper;
+
+$status = "";
+$submitButton = $form->get('submit');
+$textArea = $form->get('text');
+$newLinesCount = 0;
+if(isset($todo)) {
+	$action = "update_todo";
+	$form->setData($todo->getArrayCopy());
+	$submitButton->setValue('Save');
+	$submitButton->setAttribute('class', 'btn btn-sm btn-block btn-primary');
+	$status = "status-".$todo->status;
+	$newLinesCount = substr_count($todo->text, "\n");
+} else {
+	$action = "add_todo";
+	$submitButton->setValue('Add');
+	$submitButton->setAttribute('class', 'btn btn-sm btn-block btn-success');
+}
+$minRows = 5;
+$textArea->setAttribute('rows', max($newLinesCount + 1, $minRows));
+$form->setAttribute('action', $_SERVER['REQUEST_URI']);
+$form->setAttribute('class', 'form-todo');
+$form->prepare();
+
+?>
+<div class='todo <?php echo $status;?>'>
+	<?php echo $this->form()->openTag($form);?>
+	<div class='left col-lg-1'>
+		<input type='hidden' name='action' value='<?php echo $action;?>'/>
+		<?php echo $this->formElement($form->get('todo_sid'));?>
+		<?php if(isset($todo)) { ?>
+		<div class='date-created'>
+			<label>
+				<!--<span class='label-name'>C</span>-->
+				<span class='date'><?php echo DateHelper::dateSql(strtotime($todo->date_created));?></span>
+			</label>
+		</div>
+		<?php }?>
+		<div class='priority'>
+			<label>
+				<span class='label-name'>Priority</span>
+				<?php echo $this->formElement($form->get('priority')); ?>
+			</label>
+		</div>
+		<div class='project'>
+			<label>
+				<span class='label-name'>Project</span>
+				<?php echo $this->formElement($form->get('project_sid'));?>
+			</label>
+		</div>
+		<div class='status'>
+			<label>
+				<span class='label-name'>Status</span>
+				<?php echo $this->formElement($form->get('todo_status_sid'));?>
+			</label>
+		</div>
+		<div class='submit'><?php echo $this->formElement($submitButton);?></div>
+	</div>
+	<div class='right col-lg-11'>
+		<?php echo $this->formElement($textArea);?>
+	</div>
+	<?php echo $this->form()->closeTag();?>
+	<div class='cleared'></div>
+</div>

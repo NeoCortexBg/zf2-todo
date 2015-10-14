@@ -1,0 +1,24 @@
+<?php
+
+$title = 'Projects';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+<a href='<?php echo $this->url('project', array('action' => 'add'));?>'>Add project</a>
+<table class="table">
+<tr>
+	<th>Id</th>
+	<th>Project</th>
+	<th>&nbsp;</th>
+</tr>
+<?php foreach($projects as $project) { ?>
+<tr>
+	<td><?php echo $project->project_sid;?></td>
+	<td><?php echo $project->name;?></td>
+	<td>
+		<a href='<?php echo $this->url('project', array('action' => 'edit', 'id' => $project->project_sid));?>'>Edit</a>
+		<a href='<?php echo $this->url('project', array('action' => 'delete', 'id' => $project->project_sid));?>'>Delete</a>
+	</td>
+</tr>
+<?php } ?>
+</table>

@@ -1,0 +1,16 @@
+<?php
+
+$title = 'Delete project';
+$this->headTitle($title);
+?>
+<h1><?php echo $this->escapeHtml($title); ?></h1>
+
+<p>Are you sure that you want to delete project '<?php echo $this->escapeHtml($project->name); ?>'?</p>
+
+<form action="<?php echo $_SERVER['REQUEST_URI']; ?>" method="post">
+<div>
+	<input type="hidden" name="id" value="<?php echo (int) $project->project_sid; ?>" />
+	<input type="submit" name="del" value="Yes" />
+	<input type="submit" name="del" value="No" />
+</div>
+</form>

@@ -1,0 +1,20 @@
+<?php
+
+$title = 'Todos';
+$this->headTitle($title);
+?>
+
+<?php echo $this->partial('todo/form_filter', array('todoFilterForm' => $todoFilterForm));?>
+<?php echo $this->partial('todo/form', array('form' => $form));?>
+
+<!--<table class="table">
+<tr>
+	<th>Date Created</th>
+	<th>Text</th>
+	<th>&nbsp;</th>
+</tr>-->
+<?php foreach($todos as $todo) {
+	echo $this->partial('todo/form', array('form' => $form, 'todo' => $todo));
+?>
+<?php } ?>
+<!--</table>-->
