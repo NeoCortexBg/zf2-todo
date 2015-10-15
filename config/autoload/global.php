@@ -14,7 +14,7 @@
 return array(
 	'db' => array(
 		'driver'         => 'Pdo',
-		'dsn'            => 'pgsql:dbname=todo1;host=localhost',
+		'dsn'            => 'pgsql:dbname=YOUR_DB_NAME;host=localhost',
 	),
 	'service_manager' => array(
 		'factories' => array(
