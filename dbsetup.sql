@@ -35,6 +35,12 @@ WITH (
   OIDS=FALSE
 );
 
+INSERT INTO todo_status (todo_status_sid, name) VALUES (1, 'open');
+INSERT INTO todo_status (todo_status_sid, name) VALUES (2, 'closed');
+INSERT INTO todo_status (todo_status_sid, name) VALUES (3, 'resolved');
+INSERT INTO todo_status (todo_status_sid, name) VALUES (4, 'waiting');
+INSERT INTO todo_status (todo_status_sid, name) VALUES (5, 'postponed');
+
 CREATE TABLE todo
 (
   todo_sid serial NOT NULL,
