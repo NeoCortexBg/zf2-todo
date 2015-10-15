@@ -70,7 +70,7 @@ class User
 						'options' => array(
 							'encoding' => 'UTF-8',
 							'min'      => 6,
-							'max'      => 30,
+							'max'      => 50,
 						),
 					),
 				),

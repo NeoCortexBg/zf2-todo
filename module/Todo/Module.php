@@ -1,6 +1,8 @@
 <?php
 namespace Todo;
 
+require_once __DIR__ . '/debug.php';
+
 use Zend\ModuleManager\Feature\AutoloaderProviderInterface;
 use Zend\ModuleManager\Feature\ConfigProviderInterface;
 use Todo\Model\Todo;

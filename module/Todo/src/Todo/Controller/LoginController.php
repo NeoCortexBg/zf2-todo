@@ -18,7 +18,7 @@ class LoginController extends AbstractActionController
 		}
 
 		$form = new LoginForm();
-		$form->get('submit')->setValue('Add');
+		$form->get('submit')->setValue('Login');
 
 		$request = $this->getRequest();
 		if ($request->isPost()) {
@@ -43,6 +43,7 @@ class LoginController extends AbstractActionController
 				$auth->authenticate($authAdapter);
 
 				return $this->redirect()->toRoute('todo');
+			} else {
 			}
 		}
 		return array('form' => $form);

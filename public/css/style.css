@@ -10324,29 +10324,89 @@ fieldset[disabled] .btn-danger.active {
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
 }
+/* line 2, /var/www/zend.todo1.com/less/include/login.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/include\/login\.less}line{font-family:\000032}}
+body.login {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #eee;
+}
+/* line 8, /var/www/zend.todo1.com/less/include/login.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/include\/login\.less}line{font-family:\000038}}
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+/* line 13, /var/www/zend.todo1.com/less/include/login.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/include\/login\.less}line{font-family:\0000313}}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+/* line 17, /var/www/zend.todo1.com/less/include/login.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/include\/login\.less}line{font-family:\0000317}}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+/* line 20, /var/www/zend.todo1.com/less/include/login.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/include\/login\.less}line{font-family:\0000320}}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+/* line 29, /var/www/zend.todo1.com/less/include/login.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/include\/login\.less}line{font-family:\0000329}}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+/* line 32, /var/www/zend.todo1.com/less/include/login.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/include\/login\.less}line{font-family:\0000332}}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+/* line 37, /var/www/zend.todo1.com/less/include/login.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/include\/login\.less}line{font-family:\0000337}}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
 /*@color-status-open: lighten(@brand-primary, 45%);*/
-/* line 8, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\000038}}
+/* line 10, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000310}}
 .cleared {
   clear: both;
   width: 100%;
 }
-/* line 12, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000312}}
+/* line 14, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000314}}
 html {
   position: relative;
   min-height: 100%;
 }
-/* line 16, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000316}}
+/* line 18, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000318}}
 body {
   padding-top: 60px;
   padding-bottom: 40px;
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
-/* line 22, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000322}}
+/* line 25, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000325}}
+body.login .navbar-top {
+  display: none;
+}
+/* line 30, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000330}}
 .footer {
   position: absolute;
   /*left: 0;*/
@@ -10354,10 +10414,10 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background-color: #f5f5f5;
+  /*background-color: #f5f5f5;*/
 }
-/* line 32, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000332}}
+/* line 40, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000340}}
 div.todo {
   margin-left: -15px;
   margin-right: -15px;
@@ -10365,8 +10425,8 @@ div.todo {
   margin-bottom: 1px;
   padding: 5px 0px 5px 0px;
 }
-/* line 39, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000339}}
+/* line 47, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000347}}
 div.todo > form {
   width: 100%;
   height: 100%;
@@ -10376,80 +10436,80 @@ div.todo > form {
         left: 0;
         right: 0;*/
 }
-/* line 49, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000349}}
+/* line 57, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000357}}
 div.todo.status-open {
   background-color: #dee6f2;
 }
-/* line 52, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000352}}
+/* line 60, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000360}}
 div.todo.status-closed {
   background-color: #fcf8e3;
 }
-/* line 55, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000355}}
+/* line 63, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000363}}
 div.todo.status-resolved {
   background-color: #dff0d8;
 }
-/* line 58, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000358}}
+/* line 66, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000366}}
 div.todo.status-waiting {
   background-color: #f2dede;
 }
-/* line 61, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000361}}
+/* line 69, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000369}}
 div.todo.status-postponed {
   background-color: #999;
 }
-/* line 65, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000365}}
+/* line 73, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000373}}
 div.todo div.left {
   font-size: 11px;
 }
-/* line 69, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000369}}
+/* line 77, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000377}}
 div.todo div.left > div > label {
   margin: 0px;
   font-weight: 400;
 }
-/* line 73, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000373}}
+/* line 81, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000381}}
 div.todo div.left > div > label > span.label-name {
   display: inline-block;
   width: 35%;
 }
-/* line 77, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000377}}
+/* line 85, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000385}}
 div.todo div.left > div > label input,
 div.todo div.left > div > label select {
   width: 60%;
   font-weight: 400;
 }
-/* line 85, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000385}}
+/* line 93, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000393}}
 div.todo div.left > div.date-created span.label-name {
   width: 10%;
 }
-/* line 88, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000388}}
+/* line 96, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000396}}
 div.todo div.left > div.date-created span.date {
   display: inline-block;
   width: 100%;
   font-weight: 400;
   font-size: 9px;
 }
-/* line 96, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\0000396}}
+/* line 104, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\00003104}}
 div.todo div.left [type=submit] {
   margin-top: 5px;
 }
-/* line 100, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\00003100}}
+/* line 108, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\00003108}}
 div.todo div.right {
   /*height: 100%;*/
 }
-/* line 103, /var/www/zend.todo1.com/less/compile/style.less */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\00003103}}
+/* line 111, /var/www/zend.todo1.com/less/compile/style.less */
+@media -sass-debug-info{filename{font-family:file\:\/\/\/var\/www\/zend\.todo1\.com\/less\/compile\/style\.less}line{font-family:\00003111}}
 div.todo div.right textarea {
   width: 100%;
   /*height: 100%;*/

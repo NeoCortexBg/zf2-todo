@@ -19,6 +19,10 @@ class LoginForm extends Form
 			'options' => array(
 				'label' => 'Email',
 			),
+			'attributes' => array(
+				'class' => 'form-control',
+				'placeholder' => 'Email address',
+			),
 		));
 		$this->add(array(
 			'name' => 'password',
@@ -26,13 +30,16 @@ class LoginForm extends Form
 			'options' => array(
 				'label' => 'Password',
 			),
+			'attributes' => array(
+				'class' => 'form-control',
+				'placeholder' => 'Password',
+			),
 		));
 		$this->add(array(
 			'name' => 'submit',
 			'type' => 'Submit',
 			'attributes' => array(
-				'value' => 'login',
-				'id' => 'submitbutton',
+				'class' => 'btn btn-lg btn-primary btn-block',
 			),
 		));
 	}

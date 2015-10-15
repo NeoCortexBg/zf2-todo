@@ -24,8 +24,8 @@
         ; ?>
 
     </head>
-    <body>
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <body class='<?php echo (isset($bodyClass) ? $bodyClass : '');?>'>
+        <nav class="navbar-top navbar navbar-inverse navbar-fixed-top" role="navigation">
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
