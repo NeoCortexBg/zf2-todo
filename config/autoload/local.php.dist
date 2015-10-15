@@ -1,0 +1,8 @@
+<?php
+
+return array(
+//	'db' => array(
+//		'username' => 'YOUR_DB_USERNAME',
+//		'password' => 'YOUR_DB_PASSWORD',
+//	),
+);
