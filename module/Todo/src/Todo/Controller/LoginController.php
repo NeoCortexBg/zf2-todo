@@ -30,9 +30,10 @@ class LoginController extends AbstractActionController
 				$data = $form->getData();
 
 				$authAdapter = new AuthAdapter($this->getServiceLocator()->get('Zend\Db\Adapter\Adapter'),
-											   'user',
-											   'email',
-											   'password'
+												'user',
+												'email',
+												'password',
+												'MD5(?)'
 											   );
 
 				$authAdapter
